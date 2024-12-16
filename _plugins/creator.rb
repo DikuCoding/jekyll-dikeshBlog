@@ -15,9 +15,11 @@ module Jekyll
       end
     end
 
+    
+
     def generate(site)
       setup
-      
+
       cards = Trello::List.find("675a7f9ea1657613864ffc50").cards
       cards.each do |card|
         # binding.pry
